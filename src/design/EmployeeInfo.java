@@ -1,5 +1,10 @@
 package design;
 
+import databases.ConnectToSqlDB;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class EmployeeInfo {
@@ -33,9 +38,12 @@ public class EmployeeInfo {
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
-		
+		this.employeeId = employeeId;
 	}
+
     public EmployeeInfo(String name, int employeeId){
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
 		
 	}
 	
