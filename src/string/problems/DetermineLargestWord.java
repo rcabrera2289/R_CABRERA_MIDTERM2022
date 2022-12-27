@@ -20,6 +20,19 @@ public class DetermineLargestWord {
         String st = "";
         //implement
 
+        String[] stringArray =wordGiven.split(" ");
+
+        String  largest = stringArray[0];
+        for(int i=1;i<stringArray.length;i++){
+
+            if( largest.length()<stringArray[i].length())
+                largest=stringArray[i];
+        }
+        map.put(largest.length(),largest);
+
+
         return map;
     }
 }
+
+
