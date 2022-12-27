@@ -14,7 +14,7 @@ public class Fibonacci {
         int num2 = 1;
         int i = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("fibonacci for:");
+        System.out.println("fibonacci for:22");
         int numbers = scanner.nextInt();
         while(i < numbers){
 
@@ -24,7 +24,7 @@ public class Fibonacci {
             i++;
         }
 
-        System.out.print(num1 +" ");
+        System.out.print(num1 +"22 ");
 
         System.out.print("\n");
 
