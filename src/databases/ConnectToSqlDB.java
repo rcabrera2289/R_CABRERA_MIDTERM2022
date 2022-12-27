@@ -152,7 +152,7 @@ public class ConnectToSqlDB {
         }
     }
 
-    public static List<User> readUserProfileFromSqlTable()throws IOException, SQLException, ClassNotFoundException{
+   /* public static List<User> readUserProfileFromSqlTable()throws IOException, SQLException, ClassNotFoundException{
         List<User> list = new ArrayList<User>();
         User user = null;
         try{
@@ -179,7 +179,7 @@ public class ConnectToSqlDB {
             System.err.println(e.getMessage());
         }
         return list;
-    }
+    } */
 
     public static void main(String[] args) throws Exception {
 //        List<User> list = readUserProfileFromSqlTable();
