@@ -11,6 +11,17 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.MongoClient;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class ConnectToMongoDB {
 
     public static MongoDatabase mongoDatabase = null;
@@ -33,7 +44,7 @@ public class ConnectToMongoDB {
         return profile + " has been registered";
     }
 
-    public List<User> readUserProfileFromMongoDB(){
+   /* public List<User> readUserProfileFromMongoDB(){
         List<User> list = new ArrayList<User>();
         User user = new User();
         MongoDatabase mongoDatabase = connectToMongoDB();
@@ -53,6 +64,7 @@ public class ConnectToMongoDB {
         }
         return list;
     }
+    */
 
     public List<String> readFromMongoDB(){
         List<String> list = new ArrayList<String>();
